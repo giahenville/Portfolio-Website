@@ -22,9 +22,11 @@ body::-webkit-scrollbar {
 body {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;     /* Firefox */
+
+  background-color: rgb(242, 242, 242);
 }
 
-/* 1. Prevent scrollbars on the entire page */
+/* Prevent scrollbars on the entire page */
 html, body {
   margin: 0;
   padding: 0;
@@ -32,7 +34,7 @@ html, body {
   height: 100%;
 }
 
-/* 2. Allow scrolling but hide scrollbars on all spines and pages */
+/* Allow scrolling but hide scrollbars on all spines and pages */
 .spine,
 .page,
 .about-me-spine {
@@ -47,7 +49,7 @@ html, body {
   display: none;             /* Chrome, Safari */
 }
 
-/* Optional: Make sure height is constrained so scroll doesn't spill */
+/* Make sure height is constrained so scroll doesn't spill */
 .container,
 .section,
 .about-me-spine,
@@ -56,25 +58,9 @@ html, body {
   box-sizing: border-box;
 }
 
+/* ****************************************************** */
 
 /* Main Body */
-
-/* Hides scrollbars but allows scrolling */
-/* .spine, .page {
-  overflow: auto; 
-  scrollbar-width: none; 
-  -ms-overflow-style: none;  
-}
-
-.spine::-webkit-scrollbar,
-.page::-webkit-scrollbar {
-  display: none;
-}  */
-
-
-
-
-
 #container
 {
     display: flex;
@@ -109,6 +95,27 @@ html, body {
     
 }
 
+#projects
+{
+  background-color: rgb(46, 253, 80);
+}
+
+#projects .spine
+{
+  background-color: rgb(46, 253, 80);
+  border-right: none;
+}
+
+/* Get rid of combining borders between projects spine and experiences spine */
+#projects .page
+{
+  border-left: 1.5px solid black;
+}
+
+
+/* ****************************************************** */
+
+
 /* All Sections Animations */
 .section
 {
@@ -116,7 +123,7 @@ html, body {
     height: 100%;
     margin: 0;
 
-    background-color: #fce4ec;
+    background-color: rgb(255, 255, 255);
     transition: width 1.2s cubic-bezier(0.77, 0, 0.175, 1); 
     transform: translateX(0);
 
@@ -127,16 +134,20 @@ html, body {
 
 .section.open
 {
-    width: 100%;
+    width: 70%;
     height: 100%;
 }
+
+
+/* ****************************************************** */
+
 
 /* Page Content */
 .spine {
     width: 80px; 
     height: 100%;
-    background-color: #e91e63;
-    color: white;
+    background-color: rgb(255, 255, 255);
+    color: black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -145,7 +156,8 @@ html, body {
     font-weight: bold;
     font-size: 1rem;
     cursor: pointer;
-    border: 1.5px solid black; 
+    border-left: 1.5px solid black; 
+    border-right: 1.5px solid black; 
     box-shadow: 2px 0 6px rgba(0,0,0,0.1);
     flex-shrink: 0;
   }
@@ -159,7 +171,7 @@ html, body {
     left: 80px;
     height: 100%;
     width: 0;
-    background-color: #fce4ec;
+   
     overflow: hidden;
     transition: width 1.2s ease;
     z-index: 0;
