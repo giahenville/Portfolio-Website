@@ -166,17 +166,26 @@ html, body {
   z-index: 0; /* just below the "books", but above body background */
   pointer-events: none; /* optional: lets clicks pass through */
   text-align: center;
+  padding: 1rem;
+}
+
+#backgroundPage img#myimage {
+  width: clamp(200px, 25vw, 400px);
+  height: auto;
+  object-fit: cover;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* soft shadow */
+  margin-bottom: 1rem;
+  pointer-events: none;
 }
 
 #backgroundPage h1,
 #backgroundPage h2 {
   margin: 0;
   padding: 0;
-
+  
   font-weight: 700;
   line-height: 1.1;
 }
-
 
 #backgroundPage h1
 {
