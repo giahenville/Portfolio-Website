@@ -158,6 +158,38 @@ html, body {
   transform-origin: center;
 }
 
+.topDiv 
+{
+  display: flex;
+}
+
+.list
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 10px;
+  padding-left: 20px;
+
+}
+
+.list .diffFont
+{
+  font-family: 'Spectral', serif;
+
+}
+
+.imgDiv 
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
 /* ****************************************************** */
 
 /* Center of Website */
