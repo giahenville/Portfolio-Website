@@ -72,6 +72,7 @@ html, body {
 
 }
 
+/* ****************************************************** */
 
 /* Right Sections */
 #section-container
@@ -145,6 +146,26 @@ html, body {
   text-orientation: mixed;
 
 }
+
+/* ****************************************************** */
+
+/* Center of Website */
+#backgroundPage
+{
+  position: fixed;   /* fix it to the viewport */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  z-index: 0; /* just below the "books", but above body background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none; /* optional: lets clicks pass through */
+}
+
+/* ****************************************************** */
 
 /* Left Section */
 .about-me-spine
