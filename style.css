@@ -12,7 +12,10 @@ body
     height: 100%;
     width: 100%;
     margin: 0;
+
 }
+
+
 
 /* For WebKit browsers (Chrome, Safari) */
 body::-webkit-scrollbar {
@@ -126,7 +129,7 @@ html, body {
   border: 1.5px solid black;
 
   position: absolute;
-  top: 40px;
+  bottom: 0;
   left: -235px; /* positions it just to the left of the spine */
   
   transform: rotate(12deg);
@@ -140,11 +143,20 @@ html, body {
   justify-content: center;
   align-items: center;
 
-  font-weight: bold;
-  font-size: 1rem;
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
+}
 
+.book-decoration h2
+{
+  font-family: 'Amatic SC', cursive;
+  font-size: 4rem; /* Adjust the size as needed */
+  font-weight: 700; 
+
+  writing-mode: vertical-rl; /* Ensures the text is vertical */
+  text-orientation: mixed; /* Allows the text to rotate */
+  
+
+  transform: rotate(180deg);
+  transform-origin: center;
 }
 
 /* ****************************************************** */
