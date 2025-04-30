@@ -261,11 +261,12 @@ html, body {
 /* Page Content */
 .spine {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     
     width: 80px; 
     height: 100%;
+    padding: 10px 10px;
     background-color: rgb(255, 255, 255);
    
     font-family: 'Space Grotesk', sans-serif;
