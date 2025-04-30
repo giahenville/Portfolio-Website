@@ -16,7 +16,6 @@ body
 }
 
 
-
 /* For WebKit browsers (Chrome, Safari) */
 body::-webkit-scrollbar {
   display: none;
@@ -107,7 +106,6 @@ html, body {
   background-color: rgb(46, 253, 80);
   border-right: none;
 
-
 }
 
 /* Get rid of combining borders between projects spine and experiences spine */
@@ -127,6 +125,7 @@ html, body {
   width: 80px;
   height: calc(100vh - 40px); 
   border: 1.5px solid black;
+  padding: 20px 20px;
 
   position: absolute;
   bottom: 0;
@@ -141,7 +140,7 @@ html, body {
 
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
 
 }
 
@@ -179,6 +178,9 @@ html, body {
   pointer-events: none; /* optional: lets clicks pass through */
   text-align: center;
   padding: 1rem;
+
+  font-family: 'Space Grotesk', sans-serif;
+  color: rgb(37, 37, 37);
 }
 
 #backgroundPage img#myimage {
@@ -258,17 +260,21 @@ html, body {
 
 /* Page Content */
 .spine {
-    width: 80px; 
-    height: 100%;
-    background-color: rgb(255, 255, 255);
-    color: black;
     display: flex;
     justify-content: center;
     align-items: center;
+    
+    width: 80px; 
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+   
+    font-family: 'Space Grotesk', sans-serif;
+    color: rgb(37, 37, 37);
+    font-size: 1rem;
+
     writing-mode: vertical-rl;
     text-orientation: mixed;
-    font-weight: bold;
-    font-size: 1rem;
+   
     cursor: pointer;
     border-left: 1.5px solid black; 
     border-right: 1.5px solid black; 
