@@ -96,10 +96,7 @@ body {
   background-color: rgb(46, 253, 80);
 }
 
-/* Ensure the container allows absolute positioning */
-#section-container {
-  position: relative;
-} 
+
 
 .book-decoration {
   width: 80px;
@@ -236,13 +233,17 @@ body {
     position: relative;
 }
 
-
+#summary
+{
+  font-size: 20px;
+}
 /* ****************************************************** */
 
 
 /* All Sections Animations */
 .section
 {
+    display: flex;
     width: 80px;
     height: 100%;
     margin: 0;
@@ -291,9 +292,10 @@ body {
    
   .page {
     flex-grow: 1;
-    overflow: hidden;
+    /* overflow: hidden; */
     z-index: 0;
     transition: none; /* Remove separate width animation */
+
   }
   
 
@@ -301,10 +303,14 @@ body {
     display: flex;
     flex-direction: column;
     opacity: 0;
-    max-height: 0;
+    /* max-height: 0; */
     max-width: 75%;
     transition: opacity 1s ease 0.5s, max-height 0.8s ease 0.5s;
     padding-top: 20px;
+    height: 100%;
+
+    font-family: 'Space Grotesk', sans-serif;
+    color: rgb(37, 37, 37);
     
   }
   
