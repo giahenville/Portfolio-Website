@@ -233,10 +233,26 @@ body {
     position: relative;
 }
 
+#navImages
+{
+  display: flex;
+  gap: 20px;
+  width: 20px;
+}
 #summary
 {
   font-size: 20px;
+  
 }
+
+#aboutSections
+{
+  display: flex;
+  gap: 20px;
+  font-size: 15px;
+  font-family: 'Spectral', serif;
+}
+
 /* ****************************************************** */
 
 
@@ -302,11 +318,12 @@ body {
   .page-content {
     display: flex;
     flex-direction: column;
+    gap: 20px;
     opacity: 0;
     /* max-height: 0; */
     max-width: 75%;
     transition: opacity 1s ease 0.5s, max-height 0.8s ease 0.5s;
-    padding-top: 20px;
+    padding: 20px;
     height: 100%;
 
     font-family: 'Space Grotesk', sans-serif;
